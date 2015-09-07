@@ -13,6 +13,6 @@ public class camera_Script1 : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.position = ball.transform.position + offset;
+        //transform.position = ball.transform.position + offset;
 	}
 }

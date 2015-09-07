@@ -91,13 +91,13 @@ public class ControlScript : MonoBehaviour {
         if (Input.GetKey(KeyCode.W))
         {
             //anim.Play("run");
-            controller.Move(new Vector3(move_speed, 0, 0));
+            controller.Move(new Vector3(0, 0, move_speed));
         }
 
         if (Input.GetKey(KeyCode.S))
         {
             //anim.Play("attack1");
-            controller.Move(new Vector3(0, 0, move_speed));
+            controller.Move(new Vector3(0, 0, -move_speed));
         }
 
         if (Input.GetKey(KeyCode.A))
@@ -109,7 +109,7 @@ public class ControlScript : MonoBehaviour {
         if (Input.GetKey(KeyCode.D))
         {
             //anim.Play("attack1");
-            controller.Move(new Vector3(0, 0, -move_speed));
+            controller.Move(new Vector3(move_speed, 0, 0));
         }
 
         if (holder == cur_player)
